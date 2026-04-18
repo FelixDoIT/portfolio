@@ -1,446 +1,405 @@
-<!DOCTYPE html>
-<html lang="vi">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Võ Duy Tuân - Fullstack Developer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Felix | Fullstack Developer</title>
+  <meta name="description" content="Portfolio of Nguyễn Võ Duy Tuân (Felix) – Fullstack Developer Intern" />
+
+  <!-- Google Fonts: JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="#" class="logo">MyPortfolio</a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Trang chủ</a></li>
-                    <li><a href="#about">Về tôi</a></li>
-                    <li><a href="#services">Dịch vụ</a></li>
-                    <li><a href="#projects">Dự án</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                </ul>
-                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / Brand -->
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="nav-logo-icon">⬡</span>
+        <span class="nav-logo-text">felix<span class="accent">.dev</span></span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about"   class="nav-link" data-section="about">about.md</a>
+        <a href="#skills"  class="nav-link" data-section="skills">skills/</a>
+        <a href="#projects"class="nav-link" data-section="projects">projects/</a>
+        <a href="#contact" class="nav-link" data-section="contact">contact.txt</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <nav class="nav-mobile" id="navMobile" aria-label="Mobile navigation">
+      <a href="#about"    class="nav-link" data-section="about">about.md</a>
+      <a href="#skills"   class="nav-link" data-section="skills">skills/</a>
+      <a href="#projects" class="nav-link" data-section="projects">projects/</a>
+      <a href="#contact"  class="nav-link" data-section="contact">contact.txt</a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Xây dựng Website & Mobile App chất lượng cao, tối ưu chi phí vận hành</h1>
-                    <p class="hero-subtitle">Tôi là Fullstack Developer chuyên kiến tạo Website và Mobile App chất lượng cao. Tôi đề cao Hiệu quả thực tế: tư vấn giải pháp tinh gọn, tập trung ngân sách vào các tính năng cốt lõi mang lại giá trị.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-                        <a href="#contact" class="btn btn-secondary">Liên hệ trao đổi</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="hero-image-placeholder">
-                        <svg width="300" height="300" viewBox="0 0 300 300">
-                            <circle cx="150" cy="150" r="140" fill="#818CF8" opacity="0.08"/>
-                            <circle cx="150" cy="150" r="100" fill="#818CF8" opacity="0.15"/>
-                            <text x="150" y="160" text-anchor="middle" fill="#818CF8" font-size="48" font-weight="bold">DEV</text>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-features">
-                <div class="feature-item">
-                    <div class="feature-icon">🚀</div>
-                    <p>Xây dựng trọn gói Web & Mobile App</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">💰</div>
-                    <p>Chi phí tối ưu, chất lượng cam kết</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">🤝</div>
-                    <p>Hỗ trợ lâu dài, không bỏ dở dự án</p>
-                </div>
-            </div>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+
+      <!-- Fake terminal window -->
+      <div class="terminal-window">
+        <div class="terminal-titlebar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="terminal-title">README.md — felix-portfolio</span>
         </div>
-    </section>
+        <div class="terminal-body">
+          <p class="terminal-line">
+            <span class="prompt">~</span>
+            <span class="cmd"> cat README.md</span>
+          </p>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Xây dựng nền tảng công nghệ vững chắc ngay hôm nay</h2>
-                <p>Chia sẻ ý tưởng hoặc vấn đề bạn đang gặp phải. Tôi sẽ phân tích và đề xuất giải pháp Web/App tối ưu chi phí & hiệu quả nhất cho riêng bạn.</p>
-                <a href="#contact" class="btn btn-primary">Nhận tư vấn ngay</a>
+          <!-- README content -->
+          <div class="readme">
+            <div class="readme-avatar-row">
+              <img
+                src="img/snorlax.jpg"
+                alt="Felix avatar"
+                class="readme-avatar"
+                width="80"
+                height="80"
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Section -->
-    <section id="about" class="why-choose">
-        <div class="container">
-            <h2 class="section-title">Tại sao nên chọn tôi?</h2>
-            <p class="section-subtitle">Tôi tập trung xây giải pháp có thể sử dụng lâu dài, bền vững và dễ dàng mở rộng, không phải sản phẩm "mì ăn liền" làm cho xong.</p>
-            <div class="why-grid">
-                <div class="why-card">
-                    <div class="why-icon">💎</div>
-                    <h3>Chi phí hợp lý - Chất lượng cao</h3>
-                    <p>Bạn không cần ngân sách "khủng" để có sản phẩm công nghệ xịn. Tôi tối ưu quy trình để mang lại mức giá cạnh tranh nhất mà vẫn đảm bảo hiệu năng và thẩm mỹ.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">📱</div>
-                    <h3>Đa nền tảng: Web & App</h3>
-                    <p>Đáp ứng mọi nhu cầu số hoá. Từ Website giới thiệu, Landing Page bán hàng đến Mobile App (iOS/Android) mượt mà.</p>
-                </div>
-                <div class="why-card">
-                    <div class="why-icon">🛡️</div>
-                    <h3>Cam kết hỗ trợ trọn đời</h3>
-                    <p>Sản phẩm bàn giao là tâm huyết của tôi. Tôi cam kết bảo hành, bảo trì và hỗ trợ bạn trong suốt quá trình vận hành sau này.</p>
-                </div>
+            <h1 class="readme-h1">
+              # Hi, I'm <span class="accent">Felix</span>
+            </h1>
+            <p class="readme-subtitle">
+              ## <span id="typingTarget"></span><span class="cursor">|</span>
+            </p>
+            <div class="readme-badges">
+              <span class="badge badge-green">Open to Work</span>
+              <span class="badge badge-blue">Ho Chi Minh City 📍</span>
             </div>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section class="about-me">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="about-image-placeholder">
-                        <svg width="400" height="400" viewBox="0 0 400 400">
-                            <circle cx="200" cy="200" r="180" fill="#818CF8" opacity="0.06"/>
-                            <circle cx="200" cy="160" r="60" fill="#818CF8" opacity="0.2"/>
-                            <path d="M 80 320 Q 200 280 320 320" stroke="#818CF8" stroke-width="40" fill="none" opacity="0.2"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h2>VỀ TÔI</h2>
-                    <h3>Fullstack Developer</h3>
-                    <p>Tôi là Fullstack Developer chuyên kiến tạo Website và Mobile App chất lượng cao. Tôi đề cao Hiệu quả thực tế: tư vấn giải pháp tinh gọn, tập trung ngân sách vào các tính năng cốt lõi mang lại giá trị, giúp bạn sở hữu sản phẩm công nghệ bền vững với chi phí tối ưu nhất.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-label">Chi phí</div>
-                            <div class="stat-value">Hợp lý, vừa túi tiền</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">Tiến độ</div>
-                            <div class="stat-value">Giao nhanh, đúng hẹn</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-label">Hỗ trợ</div>
-                            <div class="stat-value">Nhiệt tình, trọn đời</div>
-                        </div>
-                    </div>
-                </div>
+            <p class="readme-bio">
+              &gt; Passionate about building things for the web.<br />
+              &gt; Turning coffee ☕ into code, one commit at a time.
+            </p>
+            <div class="readme-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="mailto:nvdtuan205111@gmail.com" class="btn btn-outline">Contact Me</a>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Dịch vụ</h2>
-            <div class="services-grid">
-                <div class="service-category">
-                    <h3>Thiết kế Website</h3>
-                    <ul class="service-list">
-                        <li>
-                            <span class="service-icon">🏢</span>
-                            <span>Website Doanh nghiệp (Corporate)</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">🎯</span>
-                            <span>Landing Page bán hàng (High convert)</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">🛒</span>
-                            <span>Trang thương mại điện tử (E-commerce)</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">⚙️</span>
-                            <span>Website theo yêu cầu (Custom)</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">🎓</span>
-                            <span>Đồ án, bài tập lớn cho sinh viên</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="service-category">
-                    <h3>Lập trình Mobile App</h3>
-                    <ul class="service-list">
-                        <li>
-                            <span class="service-icon">📱</span>
-                            <span>App bán hàng, đặt lịch (iOS/Android)</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">📊</span>
-                            <span>Ứng dụng quản lý nội bộ</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">🔔</span>
-                            <span>Tích hợp thông báo đẩy (Notification)</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="service-category">
-                    <h3>Giải pháp AI & Automation</h3>
-                    <ul class="service-list">
-                        <li>
-                            <span class="service-icon">🤖</span>
-                            <span>Chatbot tư vấn tự động 24/7</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">🧠</span>
-                            <span>Tích hợp ChatGPT/OpenAI</span>
-                        </li>
-                        <li>
-                            <span class="service-icon">⚡</span>
-                            <span>Tool tự động hoá quy trình (RPA)</span>
-                        </li>
-                    </ul>
-                </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="accent">// </span>about.md
+      </h2>
+
+      <!-- Code-comment style card -->
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">javascript</span>
+        </div>
+        <pre class="code-pre"><code><span class="tok-comment">/**
+ * @name    Nguyễn Võ Duy Tuân (Felix)
+ * @role    Fullstack Developer Intern
+ * @loc     Binh Tan, Ho Chi Minh City
+ */</span>
+
+<span class="tok-kw">const</span> <span class="tok-var">felix</span> = {
+  <span class="tok-prop">education</span>:  <span class="tok-str">"FPT University – Software Engineering"</span>,
+  <span class="tok-prop">focus</span>:      [<span class="tok-str">"Frontend"</span>, <span class="tok-str">"Backend"</span>, <span class="tok-str">"REST APIs"</span>],
+  <span class="tok-prop">learning</span>:   [<span class="tok-str">"TypeScript"</span>, <span class="tok-str">"Docker"</span>, <span class="tok-str">"Cloud"</span>],
+  <span class="tok-prop">hobbies</span>:    [<span class="tok-str">"Gaming"</span>, <span class="tok-str">"Reading tech blogs"</span>, <span class="tok-str">"Gym"</span>],
+  <span class="tok-prop">available</span>:  <span class="tok-bool">true</span>,
+};
+
+<span class="tok-comment">// Currently looking for internship / junior opportunities 🚀</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="accent">// </span>skills/
+      </h2>
+
+      <div class="skills-layout">
+
+        <!-- File tree panel -->
+        <div class="file-tree" aria-label="Skills file tree">
+          <div class="file-tree-header">
+            <span>EXPLORER</span>
+          </div>
+          <ul class="tree-list">
+            <li class="tree-folder open" data-group="frontend">
+              <span class="tree-icon">▼</span> 📁 frontend
+              <ul class="tree-children">
+                <li class="tree-file active" data-skill="frontend">HTML5 &amp; CSS3</li>
+                <li class="tree-file" data-skill="frontend">JavaScript (ES6+)</li>
+                <li class="tree-file" data-skill="frontend">React.js</li>
+                <li class="tree-file" data-skill="frontend">Next.js</li>
+                <li class="tree-file" data-skill="frontend">TypeScript</li>
+                <li class="tree-file" data-skill="frontend">Tailwind CSS</li>
+              </ul>
+            </li>
+            <li class="tree-folder open" data-group="backend">
+              <span class="tree-icon">▼</span> 📁 backend
+              <ul class="tree-children">
+                <li class="tree-file" data-skill="backend">Node.js</li>
+                <li class="tree-file" data-skill="backend">Express.js</li>
+                <li class="tree-file" data-skill="backend">REST APIs</li>
+                <li class="tree-file" data-skill="backend">JWT Auth</li>
+              </ul>
+            </li>
+            <li class="tree-folder open" data-group="database">
+              <span class="tree-icon">▼</span> 📁 database
+              <ul class="tree-children">
+                <li class="tree-file" data-skill="database">MySQL</li>
+                <li class="tree-file" data-skill="database">SQL Server</li>
+                <li class="tree-file" data-skill="database">MongoDB</li>
+                <li class="tree-file" data-skill="database">Firebase</li>
+              </ul>
+            </li>
+            <li class="tree-folder open" data-group="tools">
+              <span class="tree-icon">▼</span> 📁 tools
+              <ul class="tree-children">
+                <li class="tree-file" data-skill="tools">Git &amp; GitHub</li>
+                <li class="tree-file" data-skill="tools">Docker (learning)</li>
+                <li class="tree-file" data-skill="tools">Swagger / Postman</li>
+                <li class="tree-file" data-skill="tools">VS Code</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Skill badges panel -->
+        <div class="skills-badges">
+          <div class="badge-group">
+            <span class="badge-label">Frontend</span>
+            <div class="badge-row">
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">Next.js</span>
+              <span class="skill-badge">Tailwind</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Các Dự Án</h2>
-            <p class="section-subtitle">Các dự án dưới đây là demo mô phỏng nhằm thể hiện tư duy giải pháp và năng lực kỹ thuật của tôi trong việc kết hợp Web Development và AI.</p>
-            <p class="projects-year">Selected Works 2024-2025</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg viewBox="0 0 400 300">
-                                <rect width="400" height="300" fill="#1E1B4B"/>
-                                <text x="200" y="150" text-anchor="middle" fill="#818CF8" font-size="24">Project 1</text>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Dự án E-commerce</h3>
-                        <p>Nền tảng thương mại điện tử hiện đại với tích hợp thanh toán và quản lý kho hàng thông minh</p>
-                        <div class="project-tags">
-                            <span class="tag">E-COMMERCE</span>
-                            <span class="tag">NODEJS</span>
-                            <span class="tag">REACT</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg viewBox="0 0 400 300">
-                                <rect width="400" height="300" fill="#172554"/>
-                                <text x="200" y="150" text-anchor="middle" fill="#60A5FA" font-size="24">Project 2</text>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Chatbot Platform</h3>
-                        <p>Web App + AI cho doanh nghiệp với khả năng tự động hóa customer service</p>
-                        <div class="project-tags">
-                            <span class="tag">WEB APP</span>
-                            <span class="tag">AI AGENT</span>
-                            <span class="tag">OPENAI</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg viewBox="0 0 400 300">
-                                <rect width="400" height="300" fill="#1E293B"/>
-                                <text x="200" y="150" text-anchor="middle" fill="#94A3B8" font-size="24">Project 3</text>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Mobile App đặt lịch</h3>
-                        <p>Ứng dụng di động cho phép đặt lịch hẹn với tích hợp notification push</p>
-                        <div class="project-tags">
-                            <span class="tag">MOBILE</span>
-                            <span class="tag">REACT NATIVE</span>
-                            <span class="tag">FIREBASE</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <svg viewBox="0 0 400 300">
-                                <rect width="400" height="300" fill="#422006"/>
-                                <text x="200" y="150" text-anchor="middle" fill="#FBBF24" font-size="24">Project 4</text>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Dashboard Analytics</h3>
-                        <p>Hệ thống quản lý và phân tích dữ liệu real-time cho doanh nghiệp</p>
-                        <div class="project-tags">
-                            <span class="tag">ANALYTICS</span>
-                            <span class="tag">DASHBOARD</span>
-                            <span class="tag">VUE.JS</span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="badge-group">
+            <span class="badge-label">Backend</span>
+            <div class="badge-row">
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express</span>
+              <span class="skill-badge">REST API</span>
+              <span class="skill-badge">JWT</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Journey Section -->
-    <section class="journey">
-        <div class="container">
-            <h2 class="section-title">Hành trình của tôi</h2>
-            <p class="section-subtitle">Hành trình từ giảng đường đến những dự án thực tế là quãng đường của sự "vấp ngã và trưởng thành".</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <div class="timeline-content">
-                        <h3>Đam mê dẫn lối</h3>
-                        <p>"Thích công nghệ thì vào FPT thôi". Suy nghĩ đơn giản của chàng trai 18 tuổi. Mang theo sự háo hức và niềm tin rằng mình sẽ sớm trở thành một "siêu nhân code".</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-                    <div class="timeline-content">
-                        <h3>Cú sốc hiện thực</h3>
-                        <p>Đời không như mơ. Công nghệ khó hơn tôi tưởng. Tôi bị rớt vài môn, cảm giác như rơi tự do. Nhưng chính lúc chạm đáy đó, tôi quyết định không bỏ cuộc. Tôi sốc lại tinh thần, bắt đầu lại từ những dự án nhỏ nhất.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-year">2025</div>
-                    <div class="timeline-content">
-                        <h3>Giúp Khách hàng có web ưng ý</h3>
-                        <p>Vượt qua khủng hoảng, giờ tôi mang kinh nghiệm và sự thấu hiểu đó để phục vụ khách hàng. Tôi không chỉ viết code, tôi giúp bạn hiện thực hóa ý tưởng website ưng ý nhất.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="badge-group">
+            <span class="badge-label">Database</span>
+            <div class="badge-row">
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">SQL Server</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Firebase</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Chuyện người thật, việc thật</h2>
-            <p class="section-subtitle">Niềm tin được xây dựng từ kết quả thực tế.</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Ưng nhất là cái khoản support. Web bàn giao xong 3 tháng rồi, mình nhắn nhờ sửa lại cái banner lúc 10h đêm mà vẫn rep và xử lý luôn trong đêm. Trách nhiệm thực sự!"</p>
-                    <div class="testimonial-author">
-                        <strong>Anh Tuấn</strong>
-                        <span>CEO, Chuỗi F&B Hà Nội</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Mình từng thuê team khác làm app mà bug tùm lum, gọi không nghe máy. Gặp đúng kiểu cứu tinh, fix bug 'thần tốc', app giờ chạy mượt, khách khen quá trời."</p>
-                    <div class="testimonial-author">
-                        <strong>Chị Lan Anh</strong>
-                        <span>Founder, Thời trang thiết kế</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Chi phí rất hợp lý so với chất lượng nhận được. Code kỹ, logic chặt chẽ, không vẽ vời thêm tính năng để thu tiền. Rất đáng tin cậy để hợp tác đường dài."</p>
-                    <div class="testimonial-author">
-                        <strong>Huy Hoàng</strong>
-                        <span>Project Manager, Tech Startup</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Giải pháp AI chatbot tư vấn giúp bên mình giảm được 60% lượng tin nhắn hỏi đáp cơ bản. Nhân viên chỉ cần tập trung chốt đơn thôi, hiệu quả thấy rõ."</p>
-                    <div class="testimonial-author">
-                        <strong>Văn Minh</strong>
-                        <span>Giám đốc, Công ty Vận tải</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Làm việc chuyên nghiệp, rõ ràng từng đầu mục. Web chạy nhanh, chuẩn SEO, mới chạy 2 tuần mà từ khóa đã bắt đầu lên top. Rất hài lòng!"</p>
-                    <div class="testimonial-author">
-                        <strong>Thanh Hằng</strong>
-                        <span>Head of Sales, Mỹ phẩm Organic</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Ban đầu mình chỉ tính làm cái web đơn giản thôi, mà tư vấn kỹ quá, 'moi' ra được bao nhiêu vấn đề vận hành mình không để ý. Cuối cùng chốt làm luôn hệ thống quản lý, giờ nhàn tênh."</p>
-                    <div class="testimonial-author">
-                        <strong>Quốc Đạt</strong>
-                        <span>Marketing Manager, BĐS</span>
-                    </div>
-                </div>
+          </div>
+          <div class="badge-group">
+            <span class="badge-label">Tools</span>
+            <div class="badge-row">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Swagger</span>
+              <span class="skill-badge">Postman</span>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Bạn cần Web/App trọn gói với chi phí tốt nhất?</h2>
-            <p class="section-subtitle">Để lại thông tin, tôi sẽ liên hệ tư vấn giải pháp tối ưu cho bạn ngay.</p>
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Họ và tên" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Số điện thoại / Zalo" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="service" class="sr-only">Nhu cầu của bạn</label>
-                    <select id="service" name="service" aria-label="Nhu cầu của bạn" required>
-                        <option value="">Nhu cầu của bạn</option>
-                        <option value="website">Website doanh nghiệp</option>
-                        <option value="ecommerce">Website thương mại điện tử</option>
-                        <option value="landing">Landing Page</option>
-                        <option value="mobile">Mobile App</option>
-                        <option value="ai">Giải pháp AI & Automation</option>
-                        <option value="other">Khác</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Lời nhắn (Không bắt buộc)"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-large">Nhận tư vấn ngay</button>
-            </form>
-            <div class="contact-info">
-                <a href="tel:0123456789" class="contact-link">📞 0123 456 789</a>
-                <a href="mailto:your.email@example.com" class="contact-link">✉️ Email</a>
-                <a href="#" class="contact-link">💬 Zalo</a>
-                <a href="#" class="contact-link">📘 Facebook</a>
-            </div>
+      </div><!-- /skills-layout -->
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="accent">// </span>projects/
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- ── Project 1: Watchify ── -->
+        <article class="repo-card">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/>
+            </svg>
+            <a href="https://github.com/FelixDoIT/watchify" target="_blank" rel="noopener noreferrer" class="repo-name">
+              FelixDoIT / <strong>watchify</strong>
+            </a>
+            <span class="repo-visibility">Public</span>
+          </div>
+          <p class="repo-desc">
+            🎬 A movie discovery app powered by Jikan &amp; TMDB APIs. Browse anime and films with a clean, responsive UI.
+          </p>
+          <div class="repo-stack">
+            <span class="stack-dot dot-react"></span><span>React</span>
+            <span class="stack-dot dot-bootstrap"></span><span>React Bootstrap</span>
+            <span class="stack-dot dot-jikan"></span><span>Jikan API</span>
+            <span class="stack-dot dot-tmdb"></span><span>TMDB API</span>
+          </div>
+          <div class="repo-links">
+            <a href="https://watchify-vert-omega.vercel.app/" target="_blank" rel="noopener noreferrer" class="repo-btn">🔗 Live Demo</a>
+            <a href="https://github.com/FelixDoIT/watchify" target="_blank" rel="noopener noreferrer" class="repo-btn repo-btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <!-- ── Project 2: rest-auth-api ── -->
+        <article class="repo-card">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/>
+            </svg>
+            <a href="https://github.com/FelixDoIT/rest-auth-api" target="_blank" rel="noopener noreferrer" class="repo-name">
+              FelixDoIT / <strong>rest-auth-api</strong>
+            </a>
+            <span class="repo-visibility">Public</span>
+          </div>
+          <p class="repo-desc">
+            🔐 Production-ready REST authentication API with JWT, role-based access, and full Swagger documentation.
+          </p>
+          <div class="repo-stack">
+            <span class="stack-dot dot-nodejs"></span><span>Node.js</span>
+            <span class="stack-dot dot-express"></span><span>Express</span>
+            <span class="stack-dot dot-mysql"></span><span>MySQL</span>
+            <span class="stack-dot dot-jwt"></span><span>JWT</span>
+            <span class="stack-dot dot-swagger"></span><span>Swagger</span>
+          </div>
+          <div class="repo-links">
+            <a href="https://rest-auth-api.onrender.com/api-docs" target="_blank" rel="noopener noreferrer" class="repo-btn">🔗 API Docs</a>
+            <a href="https://github.com/FelixDoIT/rest-auth-api" target="_blank" rel="noopener noreferrer" class="repo-btn repo-btn-outline">GitHub</a>
+          </div>
+        </article>
+
+        <!-- ── Project 3: Studill ── -->
+        <article class="repo-card">
+          <div class="repo-card-header">
+            <svg class="repo-icon" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8Z"/>
+            </svg>
+            <a href="https://github.com/FelixDoIT/studill" target="_blank" rel="noopener noreferrer" class="repo-name">
+              FelixDoIT / <strong>studill</strong>
+            </a>
+            <span class="repo-visibility">Public</span>
+          </div>
+          <p class="repo-desc">
+            📚 AI-powered study assistant using Groq API. Generates flashcards, summaries &amp; quizzes from your notes.
+          </p>
+          <div class="repo-stack">
+            <span class="stack-dot dot-nextjs"></span><span>Next.js</span>
+            <span class="stack-dot dot-ts"></span><span>TypeScript</span>
+            <span class="stack-dot dot-tailwind"></span><span>Tailwind</span>
+            <span class="stack-dot dot-groq"></span><span>Groq API</span>
+            <span class="stack-dot dot-mysql"></span><span>MySQL</span>
+          </div>
+          <div class="repo-links">
+            <a href="https://studill.vercel.app/" target="_blank" rel="noopener noreferrer" class="repo-btn">🔗 Live Demo</a>
+            <a href="https://github.com/FelixDoIT/studill" target="_blank" rel="noopener noreferrer" class="repo-btn repo-btn-outline">GitHub</a>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="accent">// </span>contact.txt
+      </h2>
+
+      <div class="contact-layout">
+
+        <!-- Info column -->
+        <div class="contact-info">
+          <div class="code-block contact-code">
+            <div class="code-header"><span class="code-lang">bash</span></div>
+            <pre class="code-pre"><code><span class="tok-comment"># Reach me here</span>
+
+<span class="tok-var">EMAIL</span>=<span class="tok-str">"nvdtuan205111@gmail.com"</span>
+<span class="tok-var">GITHUB</span>=<span class="tok-str">"github.com/FelixDoIT"</span>
+<span class="tok-var">LOCATION</span>=<span class="tok-str">"Ho Chi Minh City, VN"</span></code></pre>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:nvdtuan205111@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              nvdtuan205111@gmail.com
+            </a>
+            <a href="https://github.com/FelixDoIT" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/FelixDoIT
+            </a>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>MyPortfolio</h3>
-                    <p>© 2026 MyPortfolio, All Rights Reserved.</p>
-                </div>
-                <div class="footer-note">
-                    <p>Một số dự án trên website là demo/practice nhằm thể hiện năng lực và quy trình làm việc.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <!-- Contact form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">// name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">// email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">// message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Hello Felix, I'd like to..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="submitText">Send Message</span>
+          </button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
 
-    <script src="js/main.js"></script>
+      </div><!-- /contact-layout -->
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        © 2026 <span class="accent">Felix</span> · Built with HTML, CSS &amp; JS · No frameworks harmed 🙂
+      </p>
+      <p class="footer-commit">
+        <span class="accent">git commit</span> -m <span class="tok-str">"ship it 🚀"</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
+
